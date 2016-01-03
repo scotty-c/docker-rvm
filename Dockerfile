@@ -1,10 +1,12 @@
 
 # Docker file for CentOS with RVM
-FROM centos:centos6
+FROM centos:centos7
 
 MAINTAINER Scott Coulton "https://github.com/scotty-c/docker-rvm"
 
 ENV HOME /root
+
+#VOLUME ["/usr/local/"]
 
 CMD ["/bin/bash", "-l"]
 
